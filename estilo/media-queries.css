@@ -1,0 +1,141 @@
+/*Configuração para outras telas*/
+
+
+
+/*Todas as demais mídias*/
+
+/*typical device brakpoints */
+/*
+Pequnas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px*/
+
+
+/*Configuração de tablet*/
+@media screen and (min-width:768px){
+    /*Formatações do MENU*/
+    i#burguer{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    nav > ul > li{
+        display: inline-block;
+    }
+    header{
+       
+        display: flex; /*Deixar itens lado a lado*/
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    }
+    ul.formataNav{
+    
+        display: flex;
+        justify-content: space-between; /*Deixar links lado a lado*/
+        text-align: center;
+        
+    }
+    
+    li.formataItem{
+        list-style-type: none;
+        padding-right: 36px; /*Espaçamento dos links*/
+        
+    }
+    /*Tirando padding do último item da navBar*/
+    li.formataItem:last-child{
+        padding-right: 0; 
+    }
+    /*Links*/
+    .formataLink{
+        text-decoration: none;
+        color: var(--azulPrincipal);
+        padding-bottom: 08px;
+        font-size: 1rem;
+        border: none;
+    }
+   
+    li.formataItem a:hover{ /*Hover dos links*/
+        
+        border-bottom: 1px solid var(--azulPrincipal);
+        
+    }
+    li.formataItem:last-child:hover{ /*Hover dos links*/
+        
+        border-bottom: 1px solid var(--azulPrincipal);
+       
+    }
+}
+
+/*Configuração de desktop*/
+@media screen and (min-width:992px){
+    /*Header*/
+    .logoDesktop{
+        height: 70px;
+    }
+    header{
+        padding: 20px 105px 10px;
+    }
+    .formataLink{
+        font-size: 1.3rem;
+    }
+    .containerPrincipal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 80px;
+        padding-bottom: 150px;
+    
+    }
+    
+    /*Primeiro bloco*/
+    .perfilPrincipal{
+        margin-right: 158px;
+    }
+   
+    /*Segundo Bloco*/
+    .segundoBloco{
+        padding-top: 38px;
+        /*border: 1px solid red;*/
+        
+    }
+    .textoPrincipal{
+        font-weight:100;
+        font-size: 48px;
+        margin-bottom: 38px;
+        text-align: start;
+    }
+   
+    /*Botões*/
+    .botaoPrincipal{
+        width: 218px;
+        height: 63px;
+        background-color: var(--azulPrincipal);
+        border: none;  
+        transition: 0.8s;
+    }
+   
+    .botaoPrincipal:hover{
+        transform: scale(1.1);/*Aumentar botão*/
+        transition: 0.8s;
+        
+    }
+
+    .imagemPrincipal{
+        height: 400px;
+    }
+
+    .tirarBrDesktop{
+        display: none;
+    }
+    .deixarBrDesktop{
+        display: block;
+    }
+   
+} 
+

@@ -1,0 +1,338 @@
+ /*Fonte*/
+ @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+ /*Cores*/
+ :root{
+     --azulPrincipal:#00BCD4;
+     --verdePrincipal: #0BE082;
+     --pretoPrincipal: #1E1E1E;
+ }
+ /*Estilo site inteiro*/
+ *{
+     box-sizing: border-box;
+     margin: 0;/*Remover margem*/
+     padding: 0;/*Remover padding*/
+     font-family: 'Share Tech',sans serif;
+     text-decoration: none;
+ }
+ body{
+     background-color: var(--pretoPrincipal);
+     color: #ffffff;/*Cor padrão do texto*/
+ }
+
+
+
+
+main{
+    padding: 0 16px;
+}
+
+section{
+   margin-bottom: 50px;
+}
+
+/*Formatações Padrão*/
+.borderRadiusPadrao{
+    border-radius: 15px;/*Arrendondar botões*/
+}
+
+.subtitulo{ 
+    font-weight:normal;
+    color: var(--pretoPrincipal);
+    background-color: var(--azulPrincipal);
+    padding: 10px 0;
+    width: 100px;
+    text-align: center;
+    border-radius: 15px 0 ;/*Arrendondar*/
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+
+}
+
+.subtituloSemBg{ /*Subtitulo sem cor de fundo*/
+    font-weight:normal;
+    font-size: 1.2rem;
+    color: var(--verdePrincipal);
+    margin-bottom: 16px;
+    
+    
+}
+
+.centralizaTexto{
+    text-align: center;
+}
+
+/*Botões*/
+.botaoProjeto{
+    width: 90px;
+    height: 40px;
+    background-color: var(--pretoPrincipal);
+    border: 1px solid var(--azulPrincipal);
+    
+    
+    
+}
+
+button a{/*Mudar cor do texto do botãoProjeto*/
+    color: #ffffff; 
+}
+/*Formatar fonte do botaoProjeto*/
+.formataBotaoProjeto{
+    text-decoration: none;
+    font-size: 0.8rem;
+     
+}
+
+ /*Estilo da Barra de navegação*/
+
+ /*Lista da Barra de navegação*/
+
+li.formataItem{
+    list-style-type: none;
+}
+
+/*Links*/
+.formataLink{
+    display: block;
+    text-decoration: none;
+    color: var(--azulPrincipal);
+    padding: 8px;
+    font-size: 1rem;
+    border-bottom:1px solid var(--azulPrincipal);
+    
+}
+
+
+
+/*MENU HAMBURGUER*/
+header{
+    padding: 16px;
+    border-bottom: 1px solid var(--azulPrincipal);    
+    position: fixed;
+    width: 100%;
+    background-color: var(--pretoPrincipal);    
+}
+
+
+.blocoLogoMenu{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+}
+nav{
+    display: none;
+    text-align: center;
+}
+i#burguer{
+    display: block;
+    cursor: pointer;
+}
+
+
+
+/*Container Principal*/
+
+.containerPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.perfilPrincipal{
+    margin-top:120px;
+}
+
+.segundoBloco{
+    padding-top: 25px;
+    text-align: center;
+}
+
+.textoPrincipal{
+   font-size: 1.8rem;
+   text-align: center;
+   font-weight:100;
+}
+
+/*Botões*/
+.botaoPrincipal{
+    width: 100px;
+    padding: 5px;
+    background-color: var(--azulPrincipal);
+    border: none; 
+    font-size: 1rem; 
+    margin-top: 25px;
+    
+}
+
+ /*PÁGINA SOBRE MIM*/
+
+.containerSobre{
+   
+
+ }
+
+.areaPerfil{
+    text-align: center;
+    margin: 16px 0;
+ }
+
+ .textoSobreMim{
+    text-align: justify;
+    font-size: 1.2rem;
+ }
+
+ /*FORMAÇÃO*/
+
+
+.containerFormacao{
+}
+
+
+/*EFEITO CARROUSEL*/
+
+.gallery{
+    width: 200px;
+    height: 341px;
+    background-color: var(--pretoPrincipal);
+    overflow: hidden;
+    border-radius: 50px;
+    
+}
+
+.gallery .fotosCards{
+    width: 400%;
+    animation-name: animacaoCards;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.gallery .fotos img{
+    width: 19.9%;
+}
+
+@keyframes animacaoCards {
+
+    0%{margin-left: 0;} 
+    20%{margin-left: 0;}
+    33%{margin-left: -100%;} 
+    45%{margin-left: -100%;}  
+    66%{margin-left: -200%;}  
+    70%{margin-left: -200%;}  
+    99%{margin-left: -300%;}  
+    100%{margin-left: -300%;}         
+    
+}
+
+/*LINGUAGENS*/
+
+.areaLinguagens{
+    margin-top: 25px;
+    
+}
+
+/*Configurando grid com areas*/
+.imagem1{
+    grid-area: primeiraImagem;
+    text-align: center;
+}
+.imagem2{
+    grid-area: segundaImagem;
+    text-align: center;
+}
+.imagem3{
+    grid-area: terceiraImagem;
+    text-align: center;
+    
+}
+
+.imagem4{
+    grid-area: quartaImagem;
+    text-align: center;
+}
+
+.linguagensLinha{
+    margin: 16px 0 16px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: "primeiraImagem segundaImagem"
+                         "terceiraImagem quartaImagem";
+    row-gap: 20px;
+}
+
+.nomeLinguagem{
+    color: var(--verdePrincipal);
+    margin-top: 8px;
+    font-size: 1.1rem;
+}
+
+/*PORTIFÓLIO*/
+
+.containerPortifolio{
+    
+}
+
+.nomeProjeto{
+    font-weight:normal;
+    font-size: 1.8rem;
+    color: var(--verdePrincipal);
+    
+}
+
+.paragrafoProjeto{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.blocoBotoesProjetos{
+    margin-top: 16px;
+}
+
+/*CONTATO*/
+
+.formulario{
+    display: none;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+ /*Lista das Redes Sociais*/
+ .subtituloRedes{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+.formataItemRedes{
+    display: flex; 
+    align-items: center;  
+    margin-bottom: 20px;
+     
+}
+
+.formataLinkRede{
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.blocoDasRedes img{
+    height: 45px;
+}
+
+/*FOOTER*/
+
+footer{
+    border-top: 1px solid var(--azulPrincipal);
+    padding: 16px 0;
+}

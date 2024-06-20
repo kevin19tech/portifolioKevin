@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="estilo/media-queries.css">
+    <!--Link dos Ícones do Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <title>Portifólio - Kevin Gomes</title>
+</head>
+
+<body onresize="mudouTamanho()">
+    <!--Cabeçalho-->
+    <header>
+        <div class="blocoLogoMenu">
+            <!--Logo-->
+            <a href="#"><img src="./imagens/logo_desktop.png" alt="Logo-Kevin" height="40px" class="logoDesktop"></a>
+            <!--Ícone Hamburguer-->
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+
+        </div>
+        <!--Menu Hamburguer-->
+        <nav id="items">
+            <ul class="formataNav" onclick="clickMenu()">
+                <li class="formataItem"><a class="formataLink" href="">Início</a></li>
+                <li class="formataItem"><a class="formataLink" href="#sobreMim">Sobre mim</a></li>
+                <li class="formataItem"><a class="formataLink" href="#formacao">Formação</a></li>
+                <li class="formataItem"><a class="formataLink" href="#portifolio">Portifólio</a></li>
+                <li class="formataItem"><a class="formataLink" href="#contato" style="border: none;">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="principal">
+
+            <div class="container containerPrincipal">
+                <div class="perfilPrincipal">
+                    <img src="imagens/kevin.png" alt="imagemPerfilKevin" height="188" class="imagemPrincipal">
+                </div>
+                
+                    <div class="segundoBloco">
+                        <h2 class="textoPrincipal">
+                            Olá! <br>
+                            Eu sou<br class="tirarBrDesktop"> <span style="color: var(--azulPrincipal);">Kevin</span>,<br>
+                            <!--Usei span para aplicar a cor apenas ao meu nome-->
+                            Programador<br class="tirarBrDesktop"> Web e <br style="display: none;" class="deixarBrDesktop">Mobile
+                        </h2>
+                        
+                        <button class="botaoPrincipal borderRadiusPadrao">
+                            <a href="#contato" style="color: var(--pretoPrincipal); text-decoration: none;">Entrar em Contato</a>
+                        </button>
+                    </div>
+                
+    
+            </div>
+        </section>
+    
+    
+        <!--SOBRE MIM-->
+        <section id="sobreMim" class="container containerSobre">
+            <!--Subtitulo-->
+            <a name="#sobreMim">
+                <h2 class="subtitulo">Sobre Mim</h2>
+            </a>
+            <!--Área da Imagem-->
+            <div class="areaPerfil">
+                <img src="imagens/kevin.png" alt="imagem Perfil Kevin" height="200">
+            </div>
+    
+            <div class="textoSobreMim">
+                <p>Meu nome é Kevin, tenho 24 anos. Desde a adolescência tinha interesse por tecnologia. Gosto de
+                    automatizar e facilitar processos, atitudes que contribuíram para escolher a profissão de programador.
+                    <br><br>
+    
+                    Entrei na área de Tecnologia da Informação por meio de cursos online, os quais formaram a base para
+                    ingressar na graduação de Análise e Desenvolvimento de Sistemas.<br><br>
+    
+                    Sempre busco ser alguém responsável, honesto e dedicado, e me esforço para demonstrar essas qualidades
+                    na vida profissional também.<br><br>
+    
+                    Para descontrair gosto de tocar violão, praticar atividades físicas como a natação, futebol e caminhada.
+                    Também jogo videogame nas horas vagas.
+            </div>
+        </section>
+    
+    
+        <!--FORMAÇÃO-->
+        <!--<section id="formacao" class="container containerFormacao">
+            <!--Subtitulo
+            <a name="#formacao"><h2 class="subtitulo">Formação</h2></a>
+    
+            <div class="cardsFormacao">-->
+        <!--Cards-->
+    
+        <!--
+                 <!--Card - 1 
+                 <div class="cards">
+                     <div>
+                         <div class="topoCard">
+                             <div class="backgroundDoIcone">
+                                 <img src="imagens/cursos.svg" alt="Cursos" width="100" height="100">
+                             </div>
+                         </div>
+                     </div>
+                         <h1>Cursos</h1><br>
+    
+                         <ul class="textoCard">
+                             <li style="padding-bottom: 20px;">Programador de Dispositivos Móveis - SENAC Bahia</li>
+                             <li>Desenvolvimento Web - Em andamento</li>
+                         </ul>
+                 </div>
+    
+                 <!--Card - 2 
+                 <div class="cards">
+                     <div>
+                         <div class="topoCard">
+                             <div class="backgroundDoIcone">
+                                 <img src="imagens/graduacao.svg" alt="Graduação" width="100">
+                             </div>
+                         </div>
+                     </div>
+                         <h1>Graduação</h1><br>
+    
+                         <ul class="textoCard">
+                             <li class="listaFormacao" style="padding-bottom: 20px;">Análise e Desenvolvimento de Sistemas - Uninter - Em Andamento</li>
+                             
+                         </ul>
+                 </div>
+                
+                 <!--Card - 3 
+                 <div class="cards">
+                     <div>
+                         <div class="topoCard">
+                             <div class="backgroundDoIcone">
+                                 <img src="imagens/idiomas.svg" alt="Idiomas" width="100" height="100">
+                             </div>
+                         </div>
+                     </div>
+                         <h1>Idiomas</h1><br>
+    
+                         <ul class="textoCard">
+                             <li style="padding-bottom: 20px;">Português - Fluente</li>
+                             <li>Inglês - Básico</li>
+                         </ul>
+                 </div>
+                -->
+    
+    
+        <section class="containerFormacao" id="formacao">
+            <!--Subtitulo-->
+            <a name="#formacao">
+                <h2 class="subtitulo">Formação</h2>
+            </a>
+    
+            <section class="gallery" style="margin: 0 auto;">
+                <div class="fotosCards">
+                    <img src="./imagens/img01-Card.png" alt="Card 01">
+                    <img src="./imagens/img02-Card.png" alt="Card 02">
+                    <img src="./imagens/img03-Card.png" alt="Card 03">
+                    <img src="./imagens/img01-Card.png" alt="Card 01">
+
+                    
+    
+            </section>
+        </section>
+    
+        <section class="areaLinguagens">
+            <h2 class="subtituloSemBg">Possuo conhecimento nestas linguagens</h2>
+    
+            <div class="linguagensLinha">
+                <!--HTML-->
+                <div class="imagem1">
+                    <img src="imagens/img_html5.png" alt="html5" height="120">
+                    <p class="centralizaTexto nomeLinguagem">HTML 5</p>
+                </div>
+    
+                <!--CSS-->
+                <div class="imagem2">
+                    <img src="imagens/img_css3.png" alt="css" height="120">
+                    <p class="centralizaTexto nomeLinguagem">CSS 3</p>
+                </div>
+    
+                <!--PYTHON-->
+                <div class="imagem3">
+                    <img src="imagens/img_python.png" alt="css" height="120">
+                    <p class="centralizaTexto nomeLinguagem">PYTHON</p>
+                </div>
+    
+                <!--JAVA-->
+                <div class="imagem4">
+                    <img src="imagens/img_java.png" alt="css" height="120">
+                    <p class="centralizaTexto nomeLinguagem">JAVA EM ANDROID</p>
+                </div>
+    
+            </div>
+        </section>
+    
+        
+        <!--PORTIFÓLIO-->
+        <section id="portifolio" class="containerPortifolio">
+            <!--Subtitulo-->
+            <a name="#portifolio"><h2 class="subtitulo">Portifólio</h2></a><br>
+            <!--Projeto 1-->
+            <h2 class="nomeProjeto">Site Finans</h2><br>
+            <div class="blocoProjeto">
+                    <img src="imagens/img_projeto-1-finans.png" alt="projeto 1 - site finans" style="max-width: 100%;">
+                    <div class="blocoDescricao-1">
+                        <p class="paragrafoProjeto">Website de empresa fictícia feito durante o curso de Desenvolvimento Web dos professores Jamilton Damasceno e Jorge Sant'Ana, na plataforma Udemy. Foi utilizado Html, Css e Bootstrap.  </p>
+    
+                        <div class="blocoBotoesProjetos">
+                            <button id="botao-1" class="botaoProjeto borderRadiusPadrao" style="margin-right: 20px; margin-bottom: 8px;">
+                                <a href="https://finans6.surge.sh/"  target="_blank" class="formataBotaoProjeto">Acessar</a>
+                            </button>
+                            <button class="botaoProjeto borderRadiusPadrao">
+                                <a href="https://github.com/kevin19tech/Finans" target="_blank" class="formataBotaoProjeto"">Ver no Github</a>
+                            </button>
+                        </div>
+                        
+                    </div> 
+                
+            </div>
+    
+            <!--Projeto 1-->
+            <h2 class="nomeProjeto" style="margin-top: 35px;">Aplicativo Checklist Assistência - DNA Corretora de Seguros</h2><br>
+            <div class="blocoProjeto">
+                <img src="imagens/img_projeto-2-final.png" alt="Projeto 2 Checklist Assistência - DNA Corretora de Seguros - Aplicativo" >
+                    <div class="blocoDescricao-1">
+                        <p class="paragrafoProjeto">Aplicativo desenvolvido para a empresa DNA Corretora de Seguros com o objetivo de auxiliar na coleta de informações feitas pelo corretor para acionar a assistência da seguradora para veículo.  Foi implementado com Java por meio do Android Studio.</p>
+    
+                        <div class="blocoBotoesProjetos">
+                            <button class="botaoProjeto borderRadiusPadrao">
+                                <a href="https://photos.google.com/share/AF1QipOTj7RnQt-kFDjrlhyt8KiNPwbNAcnPzMKC3c_-0om1xIxrdk3aFaAaJhFXqUy5oQ?pli=1&key=NzEzLWw2NHg0ZWwtSlNLYXc0eEx2QTE1amFUTjd3" target="_blank" class="formataBotaoProjeto">Ver vídeo</a>
+                            </button>
+                            
+                        </div>
+                        
+                    </div> 
+                
+            </div>
+        </section>
+    
+        <!--CONTATO-->
+        <section id="contato" class="containerContato">
+            <!--Subtitulo-->
+            <a name="#contato"><h2 class="subtitulo">Contato</h2></a>
+            
+               <div class="blocoContato">
+                <!--Formulário para contato-->
+                   <div class="formulario">
+                       <form style="display: flex; flex-direction: column;">
+                       
+                           <label class="labelForm" for="nome">Nome</label>
+                           <input type="text"  name="nome" placeholder="Digite seu nome" >
+                           
+                           <label class="labelForm" for="assunto">Assunto</label>
+                           <input type="text"  name="assunto" placeholder="Digite o assunto" >
+               
+                           <label class="labelForm" for="tel">Telefone</label>
+                           <input type="number" name="tel" placeholder="Ex.: (12) 91234-5678" >
+               
+                           <label class="labelForm" for="email">E-mail</label>
+                           <input type="email"  name="email" placeholder="Ex.: joao@email.com" >
+               
+                           <label class="labelForm" for="msg">Mensagem</label>
+                           <textarea name="msg"  cols="10" rows="10" placeholder="Digite sua mensagem" style="margin-bottom: 20px;"></textarea>
+                               <button type="submit" class="botaoFormulario borderRadiusPadrao"><a href="" style="color: var(--pretoPrincipal);">Enviar</a></button>
+                           
+               
+                        </form>
+                   </div>
+       
+                   <div class="redes">
+                       <div class="imagemPerfilContato">
+                           <img src="imagens/kevin.png" alt="perfil de Kevin" width="222">
+                       </div>
+    
+                       <!--REDES-->
+    
+                       <div class="blocoDasRedes">
+                           <div>
+                               <h3 class="subtituloRedes">Meus contatos</h3>
+                               <ul style="text-align: center;">
+                                   <li class="formataItemRedes">
+                                       <!--<img src="imagens/email.png" alt="Ícone WhatsApp" style="margin-right: 15px;">-->
+                                       <!--<i class="material-icons" style="font-size: 50px; margin-right: 15px;">mail</i>-->
+                                       <img src="imagens/mail2.svg" alt="Ícone do Github" style="margin-right: 15px; filter: invert(); height: 50px;">
+                                       <a class="formataLinkRede"href="mailto:kevin_gomes2018@outlook.com">kevin_gomes2018@outlook</a>
+                                   </li>
+                                   <li class="formataItemRedes">
+                                       <img src="imagens/github.png" alt="Ícone do Github" style="margin-right: 15px;">
+                                       <a href="https://github.com/kevin19tech" target="_blank"  class="formataLinkRede">kevin19tech</a>
+                                   </li>
+                                   <li class="formataItemRedes">
+                                       <img src="imagens/linkedin.png" alt="Ícone do Linkedin" style="margin-right: 15px;">
+                                       <a href="https://www.linkedin.com/in/kevin-gomes23/" target="_blank" class="formataLinkRede">Kevin Gomes</a>
+                                   </li>
+                                   
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+                       
+       </section>
+    </main>
+    
+
+    <footer >
+        <p class="centralizaTexto">
+            Desenvolvido por Kevin Gomes - 2024
+        </p>
+        
+    </footer>
+
+    <script>
+        /*MenuHamburguer*/
+        function clickMenu(){
+            if(items.style.display == 'block'){
+                items.style.display = 'none'
+            }else{
+                items.style.display = 'block'
+            }
+            /*Usado para deixar sempre o menu aparecendo em telas a partir de 768px*/
+            if(innerWidth >= 768){
+                items.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho(){
+            if(innerWidth >= 768){
+                items.style.display = 'block'
+            }else{
+                items.style.display = 'none'
+            }
+            
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
