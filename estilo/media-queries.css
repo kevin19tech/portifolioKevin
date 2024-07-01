@@ -74,6 +74,7 @@ Grandes Telas: acima de 1200px*/
 /*Configuração de desktop*/
 @media screen and (min-width:992px){
     /*Header*/
+    
     .logoDesktop{
         height: 70px;
     }
@@ -110,7 +111,9 @@ Grandes Telas: acima de 1200px*/
         margin-bottom: 38px;
         text-align: start;
     }
-   
+    .textoSobreMim{
+        padding: 0 200px;
+    }
     /*Botões*/
     .botaoPrincipal{
         width: 218px;
@@ -135,6 +138,11 @@ Grandes Telas: acima de 1200px*/
     }
     .deixarBrDesktop{
         display: block;
+    }
+
+    .paragrafoProjeto{
+        
+        padding-right: 500px;
     }
    
 } 
