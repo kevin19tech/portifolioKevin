@@ -252,15 +252,22 @@ i#burguer{
     grid-area: quartaImagem;
     text-align: center;
 }
-
+.imagem5{
+    grid-area: quintaImagem;
+    text-align: center;
+}
+.imagem6{
+    grid-area: sextaImagem;
+    text-align: center;
+}
 .linguagensLinha{
     margin: 16px 0 16px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    grid-template-areas: "primeiraImagem segundaImagem"
-                         "terceiraImagem quartaImagem";
+    grid-template-areas: "primeiraImagem segundaImagem terceiraImagem"
+                         "quartaImagem quintaImagem sextaImagem";
     row-gap: 20px;
 }
 
